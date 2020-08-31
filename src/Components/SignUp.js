@@ -32,10 +32,13 @@ const SignUp = (props) => {
             </div>
 
             <div className="flex items-center justify-between">
-                <button onClick={props.handleAuth} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                     Sign Up
                 </button>
             </div>
+            <p className="mt-4 text-center">
+                Have an account already? <span onClick={props.handleAcct} className="font-bold text-custom-red hover:text-custom-blue cursor-pointer">Sign In!</span>
+            </p>
       </form>
 
     );

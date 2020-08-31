@@ -19,13 +19,16 @@ const SignIn = (props) => {
             <p className="text-red-500 text-xs italic">Please enter a password.</p>
             </div>
         <div className="flex items-center justify-between">
-          <button onClick={props.handleAuth} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
             Sign In
           </button>
-          <p className="inline-block align-baseline text-sm text-blue-500 hover:text-blue-800" href="#">
+          <p className="inline-block align-baseline text-sm text-blue-500 hover:text-blue-800">
             Forgot Password?
           </p>
         </div>
+            <p className="mt-4 text-center">
+                No account? <span onClick={props.handleAcct} className="font-bold text-custom-red hover:text-custom-blue cursor-pointer">Sign Up!</span>
+            </p>
       </form>
 
     );
