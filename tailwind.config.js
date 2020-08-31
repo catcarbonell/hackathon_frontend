@@ -23,6 +23,12 @@ module.exports = {
 
       black: '#000',
       white: '#fff',
+      custom: {
+        red: '#ff5f70',
+        turqoise: '#5493b3',
+        yellow: '#e4df6f',
+        blue: '#91daff',
+      },
 
       gray: {
         100: '#f7fafc',
@@ -249,6 +255,7 @@ module.exports = {
       default: '1',
     },
     fontFamily: {
+      custom: ['Roboto', 'Advent Pro'],
       sans: [
         'system-ui',
         '-apple-system',
