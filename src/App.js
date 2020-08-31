@@ -10,10 +10,10 @@ function App() {
   return (
     <div className="App">
       <div className="w-full h-screen flex content-center">
-        <div className="w-1/2 h-auto m-auto">
-            <h1 className="text-5xl text-custom-red text-center">Us to You</h1>
-            {!isAuth &&  <SignUp setAuth={setAuth} handleAuth={handleAuth} />}
-            {isAuth && <SignIn setAuth={setAuth} handleAuth={handleAuth} />}
+        <div className="md:w-64 w-1/2 h-auto m-auto">
+            <h1 className="text-5xl text-custom-red text-center mb-4">Us to You</h1>
+            {!isAuth &&  <SignUp handleAuth={handleAuth} />}
+            {isAuth && <SignIn handleAuth={handleAuth} />}
         </div>
       </div>
     </div>
