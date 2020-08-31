@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
-
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 13px;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Advent Pro', sans-serif;
