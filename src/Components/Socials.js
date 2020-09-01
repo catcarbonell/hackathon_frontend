@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg
 
 const Socials = () => {
     return(
-        <div className="text-gray-800 mb-10">
+        <div className="text-gray-100">
             <FontAwesomeIcon className="m-2 hover:text-custom-red cursor-pointer" icon={faFacebook} size="2x" />
             <FontAwesomeIcon className="m-2 hover:text-custom-red cursor-pointer" icon={faInstagram} size="2x" />
             <FontAwesomeIcon className="m-2 hover:text-custom-red cursor-pointer" icon={faTwitter} size="2x" />

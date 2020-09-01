@@ -2,8 +2,10 @@ import React from 'react';
 
 const Section = () => {
     return(
-        <div className="w-full h-64 my-4 p-4 bg-white">
+        <div className="h-screen my-4 bg-white flex flex-col justify-center content-center items-center m-auto">
+            <div className="w-1/2 bg-custom-blue">
             <h1 className="text-5xl">Hello world!</h1>
+            </div>
         </div>
     );
 }
