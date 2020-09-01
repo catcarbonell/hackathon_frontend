@@ -18,7 +18,7 @@ function App() {
                 <Route path="/login" component={Login} />
               </Switch>
             </main>
-
+            
             <Footer />
           </div>
       </div>

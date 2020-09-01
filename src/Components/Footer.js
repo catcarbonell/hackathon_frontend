@@ -5,7 +5,7 @@ const Footer = () =>{
         <footer id="footer" 
                 className="text-center bg-white
                            flex flex-col justify-center items-center content-center">
-            <div id="newsletter" className="w-5/6 text-center mb-10">
+            <div id="newsletter" className="hidden lg:contents lg:w-5/6 lg:text-center lg:mb-10">
                 <h2 className="text-xl font-bold my-4">Join our newsletter to stay up to date!</h2>
                 <form>
                     <input className="w-40 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="text" placeholder="First Name" value="" />
@@ -14,7 +14,7 @@ const Footer = () =>{
                     <button className="w-40 px-4 py-2 m-2 rounded shadow text-white bg-custom-blue hover:bg-custom-red">Subscribe</button>
                 </form>
             </div>
-            <div id="sitemap" className="grid grid-flow-col grid-cols-4 gap-32 uppercase text-md text-left mb-10">
+            <div id="sitemap" className="hidden lg:grid lg:grid-flow-col lg:grid-cols-4 lg:gap-32 lg:uppercase lg:text-md lg:text-left lg:my-10">
                 <div>
                     <h6 className="text-lg font-bold">About</h6>
                     <p>Contact Us</p>
