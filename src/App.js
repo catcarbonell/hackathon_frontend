@@ -12,7 +12,7 @@ function App() {
           <div className="flex flex-col min-h-screen justify-between">
             <Navbar />
 
-            <main className="flex flex-grow">
+            <main className="flex flex-grow h-screen">
               <Switch>
                 <Route exact path="/" component={Landing} />
                 <Route path="/login" component={Login} />

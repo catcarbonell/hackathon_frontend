@@ -1,12 +1,12 @@
 import React from 'react';
-
+import Socials from './Socials';
 const Footer = () =>{
     return(
         <footer id="footer" 
-                className="text-center bg-white py-6 
+                className="text-center bg-white
                            flex flex-col justify-center items-center content-center">
-            <div id="newsletter" className="w-5/6 text-center my-10">
-                <h2 className="text-xl font-bold">Join our newsletter to stay up to date!</h2>
+            <div id="newsletter" className="w-5/6 text-center mb-10">
+                <h2 className="text-xl font-bold my-4">Join our newsletter to stay up to date!</h2>
                 <form>
                     <input className="w-40 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="text" placeholder="First Name" value="" />
                     <input className="w-40 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="text" placeholder="Last Name" value="" />
@@ -36,6 +36,7 @@ const Footer = () =>{
                     <p>Give Monthly</p>
                 </div>
             </div>
+            <Socials />
         </footer>
     )
 }

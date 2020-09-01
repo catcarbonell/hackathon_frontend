@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHamburger, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faChevronRight, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState(false);
@@ -40,7 +40,8 @@ const Navbar = () => {
                     <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>Businesses</span>
                     <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>About Us</span>
                     <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>My Account</span>
-                    <Link to="/login"><span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>Login</span></Link>
+                    <Link to="/login"><span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>Login</span></Link> 
+                    <FontAwesomeIcon className="m-2 hover:text-custom-red cursor-pointer" icon={faShoppingBag} size="2x" />
                     <span onClick={toggleActiveLink} className='m-2 lg:hidden text-xl hover:text-custom-red cursor-pointer'>
                         Close <FontAwesomeIcon className="hover:text-custom-red cursor-pointer" icon={faChevronRight} />
                     </span>
