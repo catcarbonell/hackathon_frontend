@@ -1,28 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import SignIn from './Components/SignIn';
-import SignUp from './Components/SignUp';
-// import Dashboard from './Components/Dashboard';
+import Footer from './Components/Footer';
+import Landing from './Components/Landing';
+import Login from './Components/Login';
 import './tailwind.output.css';
 
 function App() {
-  const [hasAcct, setAcct] = useState(true);
-  const handleAcct = () => setAcct(!hasAcct);
-    
+
   return (
-    <div className="App">
-      <div className="w-full h-screen flex content-center">
-        {/* IF AUTHENTICATED, SHOW NAVBAR && DASHBOARD */}
-        <Navbar />
-        {/* <Dashboard /> */}
-        <div className="md:w-3/4 md:min-w-64 w-full h-auto m-auto">
-            <h1 className="text-5xl text-white text-center mb-4">Us to You</h1>
-            {!hasAcct &&  <SignUp handleAcct={handleAcct} />}
-            {hasAcct && <SignIn handleAcct={handleAcct} />}
-            
-        </div>
+
+      <div className="App">
+
+          <div className="w-full h-screen flex content-center">
+            <Navbar />
+
+            <div className="md:w-3/4 md:min-h-0 w-full h-auto m-auto">
+              <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route path="/login" component={Login} />
+              </Switch>
+            </div>
+            <Footer />
+          </div>
+
       </div>
-    </div>
+
   );
 }
 
