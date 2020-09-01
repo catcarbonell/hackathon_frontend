@@ -40,8 +40,11 @@ const Navbar = () => {
                     <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>Businesses</span>
                     <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>About Us</span>
                     <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>My Account</span>
-                    <Link to="/login"><span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>Login</span></Link> 
-                    <FontAwesomeIcon className="m-2 hover:text-custom-red cursor-pointer" icon={faShoppingBag} size="2x" />
+                    
+                    <Link to="/login"><span className='m-2 text-xl hover:text-custom-red lg:py-2 lg:px-4 lg:shadow lg:text-white lg:bg-custom-red lg:rounded-md lg:text-sm lg:hover:bg-red-700 lg:hover:text-white cursor-pointer'>Login</span></Link> 
+                    <span className="m-2 text-xl hover:text-custom-red cursor-pointer">
+                        <span className="lg:hidden">Cart</span> <FontAwesomeIcon className="lg:m-2 ml-2 hover:text-custom-red cursor-pointer" icon={faShoppingBag} size="lg" />
+                    </span>
                     <span onClick={toggleActiveLink} className='m-2 lg:hidden text-xl hover:text-custom-red cursor-pointer'>
                         Close <FontAwesomeIcon className="hover:text-custom-red cursor-pointer" icon={faChevronRight} />
                     </span>
