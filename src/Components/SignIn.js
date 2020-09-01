@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignIn = (props) => {
     return (
-        <form className="bg-white rounded-lg shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form className="md:w-2/5 w-5/6 m-auto bg-white rounded-lg shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h2 className="text-2xl font-bold mb-4">Sign In</h2>
             <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
@@ -22,12 +22,14 @@ const SignIn = (props) => {
           <button className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
             Sign In
           </button>
-          <p className="inline-block align-baseline text-sm text-blue-500 hover:text-blue-800">
+          <p className="inline-block align-baseline text-sm text-blue-500 hover:text-blue-800 cursor-pointer">
             Forgot Password?
           </p>
         </div>
             <p className="mt-4 text-center">
-                No account? <span onClick={props.handleAcct} className="font-bold text-custom-red hover:text-custom-blue cursor-pointer">Sign Up!</span>
+                No account? 
+                <br />
+                <span onClick={props.handleAcct} className="font-bold text-custom-red hover:text-custom-blue cursor-pointer">Sign Up!</span>
             </p>
       </form>
 

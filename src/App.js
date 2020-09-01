@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import Navbar from './Components/Navbar';
 import SignIn from './Components/SignIn';
 import SignUp from './Components/SignUp';
-
+import Dashboard from './Components/Dashboard';
 import './tailwind.output.css';
 
 function App() {
@@ -11,10 +12,13 @@ function App() {
   return (
     <div className="App">
       <div className="w-full h-screen flex content-center">
-        <div className="md:w-1/5 w-5/6 h-auto m-auto">
+        {/* IF AUTHENTICATED, SHOW NAVBAR && DASHBOARD */}
+        <Navbar />
+        <div className="md:w-3/4 md:min-w-64 w-full h-auto m-auto">
             <h1 className="text-5xl text-white text-center mb-4">Us to You</h1>
             {!hasAcct &&  <SignUp handleAcct={handleAcct} />}
             {hasAcct && <SignIn handleAcct={handleAcct} />}
+            <Dashboard />
         </div>
       </div>
     </div>
