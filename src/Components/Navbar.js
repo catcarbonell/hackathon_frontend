@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHamburger } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState(false);
@@ -29,11 +29,17 @@ const Navbar = () => {
                 <FontAwesomeIcon onClick={toggleActiveLink} className="mr-4 text-custom-blue hover:text-custom-red cursor-pointer" icon={faHamburger} size="2x" />
             </div>
               
-            <div id="navlinks" className="lg:flex lg:flex-row lg:justify-end lg:items-center lg:content-center lg:w-1/2 hidden flex-col items-center">
-                <div className="md:flex-row md:h-16 flex items-center bg-white">
-                    <span className='m-2 hover:text-custom-red cursor-pointer'>About</span>
-                    <span className='m-2 hover:text-custom-red cursor-pointer'>My Account</span>
-                    <span className='m-2 hover:text-custom-red cursor-pointer'>Logout</span>
+            <div id="navlinks" className="relative z-10 lg:w-1/2 lg:flex lg:flex-row lg:justify-end lg:items-center lg:content-center
+                                          hidden flex flex-col items-center">
+                <div className="lg:flex lg:flex-row lg:h-16 lg:w-auto lg:items-center lg:p-0 lg:m-0
+                                absolute z-20 w-350 h-screen bg-white
+                                flex flex-col -mt-6 pt-4 pl-4">
+                    <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>About</span>
+                    <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>My Account</span>
+                    <span className='m-2 lg:text-sm text-xl hover:text-custom-red cursor-pointer'>Logout</span>
+                    <span onClick={toggleActiveLink} className='m-2 lg:hidden text-xl hover:text-custom-red cursor-pointer'>
+                        Close <FontAwesomeIcon className="hover:text-custom-red cursor-pointer" icon={faChevronRight} />
+                    </span>
                 </div>
             </div>
         </nav>
