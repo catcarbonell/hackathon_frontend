@@ -3,8 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHamburger } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
-    const [activeLink, setActiveLink] = useState(true);
-    const toggleActiveLink = () => setActiveLink(!activeLink);
+    const [activeLink, setActiveLink] = useState(false);
+    const toggleActiveLink = () => {
+        let navhidden = document.getElementById('navlinks');
+        if(navhidden.classList.contains('hidden')){
+            navhidden.classList.remove('hidden');
+        }else{
+            navhidden.classList.add('hidden');
+        }
+        setActiveLink(!activeLink)
+    };
 
 
     return(
@@ -29,12 +37,13 @@ const Navbar = () => {
                 </form>
             </div> */}
             
-            <div id="navlinks" className="flex flex-row justify-end items-center content-center w-1/2">
-                <div id="navhidden" className="md:hidden contents flex justify-end ">
-                    <FontAwesomeIcon onClick={toggleActiveLink} className="mr-4 text-custom-blue hover:text-custom-red cursor-pointer" icon={faHamburger} size="2x" />
-                </div>
+            {/* HAMBURGER MENU  */}
+            <div id="hamburger" className="lg:hidden w-5/6 contents flex justify-end ">
+                <FontAwesomeIcon onClick={toggleActiveLink} className="mr-4 text-custom-blue hover:text-custom-red cursor-pointer" icon={faHamburger} size="2x" />
+            </div>
               
-                <div className="md:contents flex-row md:h-16 mr-4 flex items-center bg-white">
+            <div id="navlinks" className="lg:flex lg:flex-row lg:justify-end lg:items-center lg:content-center lg:w-1/2 hidden flex-col items-center">
+                <div className="md:contents md:flex-row md:h-16 mr-4 flex items-center bg-white">
                     <span className='m-2 hover:text-custom-red cursor-pointer'>About</span>
                     <span className='m-2 hover:text-custom-red cursor-pointer'>My Account</span>
                     <span className='m-2 hover:text-custom-red cursor-pointer'>Logout</span>
