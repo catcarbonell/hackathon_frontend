@@ -8,20 +8,20 @@ import './tailwind.output.css';
 
 function App() {
   return (
-      <div className="App">
-          <div className="flex flex-col min-h-screen justify-between">
-            <Navbar />
-
-            <main className="flex flex-grow h-screen">
-              <Switch>
-                <Route exact path="/" component={Landing} />
-                <Route path="/login" component={Login} />
-              </Switch>
-            </main>
-            
-            <Footer />
-          </div>
+    <div className="App min-h-screen">
+       
+      <div className="flex flex-col">
+        <Navbar />
+          <main className="flex-1 mt-10 mb-20">
+            <Switch>
+              <Route exact path="/" component={Landing} />
+              <Route path="/login" component={Login} />
+            </Switch>
+          </main>
+        <Footer />
       </div>
+
+    </div>
 
   );
 }

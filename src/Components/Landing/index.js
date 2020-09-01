@@ -1,9 +1,16 @@
 import React from 'react';
+import Section from './Section';
 
 const Landing = () => {
     return(
         <div>
-            <h1>Hello world!</h1>
+            <Section />
+            <Section />
+            <Section />
+            <Section />
+            <Section />
+            <Section />
+            <Section />
         </div>
     );
 }

@@ -7,7 +7,7 @@ const Login = () => {
   const handleAcct = () => setAcct(!hasAcct);
     
   return (
-    <div className="m-auto">
+    <div className="w-full h-screen flex flex-col self-center justify-center items-center content-center">
         {!hasAcct &&  <SignUp handleAcct={handleAcct} />}
         {hasAcct && <SignIn handleAcct={handleAcct} />}
     </div>

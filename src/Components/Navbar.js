@@ -17,7 +17,7 @@ const Navbar = () => {
 
 
     return(
-        <nav className="px-8 bg-white h-16 
+        <nav className="px-8 py-4 bg-white
                         flex flex-row lg:justify-center justify-start items-center">
            
             <div id="navlogo" className="w-1/2 flex justify-start">
