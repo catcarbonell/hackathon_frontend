@@ -2,7 +2,7 @@ import React from 'react';
 
 const SignIn = (props) => {
     return (
-        <form className="lg:w-350 w-5/6 m-auto bg-white rounded-lg shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <form className="lg:w-350 w-5/6 bg-white rounded-lg shadow-md rounded px-8 pt-6 pb-8 mb-4">
             <h2 className="text-2xl font-bold mb-4">Sign In</h2>
             <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" for="username">

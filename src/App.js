@@ -7,23 +7,20 @@ import Login from './Components/Login';
 import './tailwind.output.css';
 
 function App() {
-
   return (
-
       <div className="App">
-
-          <div className="w-full h-screen flex content-center">
+          <div className="flex flex-col min-h-screen justify-between">
             <Navbar />
 
-            <div className="md:w-3/4 md:min-h-0 w-full h-auto m-auto">
+            <main className="h-screen flex flex-grow">
               <Switch>
                 <Route exact path="/" component={Landing} />
                 <Route path="/login" component={Login} />
               </Switch>
-            </div>
+            </main>
+
             <Footer />
           </div>
-
       </div>
 
   );

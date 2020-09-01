@@ -7,10 +7,10 @@ const Login = () => {
   const handleAcct = () => setAcct(!hasAcct);
     
   return (
-    <>
+    <div className="m-auto">
         {!hasAcct &&  <SignUp handleAcct={handleAcct} />}
         {hasAcct && <SignIn handleAcct={handleAcct} />}
-    </>
+    </div>
 
   );
 }
