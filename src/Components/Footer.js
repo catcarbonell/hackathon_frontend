@@ -5,7 +5,7 @@ const Footer = () =>{
         <footer id="footer" 
                 className="text-center bg-white py-6 
                            flex flex-col justify-center items-center content-center">
-            <div id="newsletter" className="w-5/6 text-center mb-10">
+            <div id="newsletter" className="w-5/6 text-center my-10">
                 <h2 className="text-xl font-bold">Join our newsletter to stay up to date!</h2>
                 <form>
                     <input className="w-40 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="text" placeholder="First Name" value="" />
