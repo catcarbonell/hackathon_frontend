@@ -1,6 +1,8 @@
 # Us to You app {Frontend}
 *Last updated: 31 Aug 2020 20:30 PST*
-## *This app runs on ReactJS!*
+## *This app runs on ReactJS AND TailwindCSS!*
+---
+## Follow the PRODUCTION instructions on [this site](https://daveceddia.com/tailwind-create-react-app/#production) to setup TailwindCSS
 ---
 ## Forked/Cloned the repo?
 ```
