@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHamburger } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
-    // toggleMenu state
+    const [activeLink, setActiveLink] = useState(true);
+    const toggleActiveLink = () => setActiveLink(!activeLink);
+
+
     return(
         <nav className="md:px-12 md:items-center
                         fixed w-full bg-white pl-8 h-16 
-                        flex md:flex-row flex-col justify-center content-center">
-            <div id="navlogo"
-                 className="md:w-1/2 w-auto 
-                            flex justify-start">
+                        flex flex-row justify-center items-center content-center">
+            <div id="navlogo" className="w-1/2 flex justify-start">
                 <h3 className="md:text-2xl text-lg font-bold text-custom-red">
                     Us to You
                 </h3>
@@ -26,8 +29,12 @@ const Navbar = () => {
                 </form>
             </div> */}
             
-            <div id="navlinks" className="md:flex md:justify-end w-1/2 hidden">
-                <div>
+            <div id="navlinks" className="flex flex-row justify-end items-center content-center w-1/2">
+                <div id="navhidden" className="md:hidden contents flex justify-end ">
+                    <FontAwesomeIcon onClick={toggleActiveLink} className="mr-4 text-custom-blue hover:text-custom-red cursor-pointer" icon={faHamburger} size="2x" />
+                </div>
+              
+                <div className="md:contents flex-row md:h-16 mr-4 flex items-center bg-white">
                     <span className='m-2 hover:text-custom-red cursor-pointer'>About</span>
                     <span className='m-2 hover:text-custom-red cursor-pointer'>My Account</span>
                     <span className='m-2 hover:text-custom-red cursor-pointer'>Logout</span>
