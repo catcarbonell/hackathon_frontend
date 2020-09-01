@@ -14,11 +14,12 @@ function App() {
       <div className="w-full h-screen flex content-center">
         {/* IF AUTHENTICATED, SHOW NAVBAR && DASHBOARD */}
         <Navbar />
+        <Dashboard />
         <div className="md:w-3/4 md:min-w-64 w-full h-auto m-auto">
             <h1 className="text-5xl text-white text-center mb-4">Us to You</h1>
             {!hasAcct &&  <SignUp handleAcct={handleAcct} />}
             {hasAcct && <SignIn handleAcct={handleAcct} />}
-            <Dashboard />
+            
         </div>
       </div>
     </div>
