@@ -5,7 +5,7 @@ const Two = () => {
     return(
         <div className="overflow-hidden h-auto my-2 lg:flex-row flex flex-col justify-center content-center items-center m-auto bg-white">
              <div className="lg:w-1/2">
-                <img src={ unload } className="object-cover w-full rounded-lg" alt="People helping unload a truck full of groceries" />
+                <img src={ unload } className="object-cover w-full" alt="People helping unload a truck full of groceries" />
             </div>
             <div className="lg:flex lg:flex-col lg:w-1/3 px-12 py-20">
                 <h2 className="lg:text-3xl text-xl text-left font-bold uppercase">
