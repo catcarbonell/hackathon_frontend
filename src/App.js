@@ -4,8 +4,9 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Landing from "./Components/Landing";
 import Login from "./Components/Login";
-import "./tailwind.output.css";
+import Businesses from "./Components/Businesses";
 import ShoppingCart from "./Components/ShoppingCart";
+import "./tailwind.output.css";
 
 function App() {
   return (
