@@ -4,7 +4,30 @@ import Listing from './Listing';
 const Businesses = () => {
     return(
         <div className="w-5/6 min-w-0 mx-auto px-10 py-20">
-           
+           <div className="w-full bg-green-100 px-4 py-0 mb-20 flex flex-col lg:flex-row">
+                <div className="lg:w-1/3 px-6 py-10 w-full m-auto flex flex-col justify-center">
+                    <h2 className="text-3xl font-bold">Now is the time</h2>
+                    <p className="text-lg">Support the places you love today!</p>
+                </div>
+                <div className="lg:w-1/3 shadow-lg h-full px-6 py-20 w-full m-auto flex flex-col bg-gray-900 text-white">
+                    <h2 className="text-2xl font-bold">Support Black-owned Restaurants</h2>
+                    <p className="text-lg w-5/6 lg:1/2 pt-4">Order from your friendly neighborhood Black-owned shop-- with FREE delivery through 2020!</p>
+                    <button className="mx-auto mt-10 p-2 rounded-lg uppercase w-40 bg-custom-limegreen hover:bg-custom-olivegreen">Shop now!</button>
+                </div>
+                <div className=" shadow lg:w-1/3 mr-8 h-64 rounded-l ml-10 w-full w-full m-auto flex flex-row bg-red-300">
+                    <div className="w-1/2 p-6 m-auto">
+                        <h2 className="text-2xl font-bold">FREE Delivery</h2>
+                        <p className="text-lg w-5/6 lg:1/2 pt-2">Make gifting quick and easy-peasy!</p>
+                        <button className="text-white mx-auto mt-4 p-2 rounded-lg uppercase w-5/6 bg-gray-800 hover:bg-gray-900">Shop now!</button>
+
+                    </div>
+                    <div className="w-1/2">
+                        <img className="h-full object-cover object-right-top rounded-r" 
+                             src="https://images.unsplash.com/photo-1552034507-dc5d8099e659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" />
+                    </div>
+                    
+                </div>
+           </div>
            <div className="w-full flex flex-col">
                 
                 <div className="w-full">
