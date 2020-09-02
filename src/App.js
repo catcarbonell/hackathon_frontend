@@ -12,7 +12,7 @@ function App() {
        
       <div className="flex flex-col">
         <Navbar />
-          <main className="flex-1 my-8">
+          <main className="flex-1">
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route path="/login" component={Login} />

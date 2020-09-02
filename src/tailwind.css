@@ -1,10 +1,37 @@
 @tailwind base;
 @tailwind components;
+
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     background-color: #f0f0f0;
 }
+
+#login-page {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#login-page::after {
+    content: "";
+    background: url('./Assets/bg-01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    z-index: -2;  
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Advent Pro', sans-serif;
 }

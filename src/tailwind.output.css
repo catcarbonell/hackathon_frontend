@@ -624,6 +624,28 @@ body {
   background-color: #f0f0f0;
 }
 
+#login-page {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#login-page::after {
+  content: "";
+  background: url('./Assets/bg-01.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: -2;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Advent Pro', sans-serif;
 }
