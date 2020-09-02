@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Product from './Product';
+import ProductDetails from './ProductDetails';
 
 const Details = () => {
+    const [activeModal, setActiveModal] = useState(false);
+    let toggleModal = () => {
+        setActiveModal(!activeModal)
+        console.log(activeModal);
+    };
+
     return(
-        <div className="overflow-hidden w-full h-full m-auto flex flex-col justify-center items-center content-center">
-            
+
+        <div className="relative overflow-hidden w-full m-auto h-full
+                        flex flex-col justify-center items-center content-center">
+            <ProductDetails toggleModal= { toggleModal } activeModal={ activeModal } />              
             <div id="details-header"
                  className="text-white h-64 w-screen mb-16 py-48 text-center flex flex-col justify-center items-center alself-center">
                     <h2 className="px-4 mb-4 bg-gray-800 font-bold text-4xl uppercase">
@@ -32,17 +41,15 @@ const Details = () => {
                             altTxt="A rubber duckie Batman"
                             productName="Batduck"
                             price={ 20 }
+                            toggleModal={ toggleModal }
                         />
 
                     </div>
                 </div>
             </div>
         
-        
-        
-        
-        
         </div>
+
     )
 }
 
