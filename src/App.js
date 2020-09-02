@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Landing from './Components/Landing';
 import Login from './Components/Login';
+import Businesses from './Components/Businesses';
 import './tailwind.output.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Landing} />
               <Route path="/login" component={Login} />
+              <Route path="/businesses" component={Businesses} />
             </Switch>
           </main>
         <Footer />

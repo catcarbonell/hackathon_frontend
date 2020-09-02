@@ -39,8 +39,8 @@ const Navbar = () => {
                 <div className="uppercase lg:text-sm text-xl lg:flex lg:flex-row lg:h-16 lg:w-auto lg:items-center lg:p-0 lg:m-0
                                 absolute z-20 w-350 h-screen bg-white
                                 flex flex-col -mt-6 pt-4 pl-4">
-                     <Link to="/"><span className='m-2 hover:text-custom-green cursor-pointer'>Home</span></Link> 
-                    <span className='m-4 hover:text-custom-green cursor-pointer'>All Businesses</span>
+                    <Link to="/"><span className='m-2 hover:text-custom-green cursor-pointer'>Home</span></Link> 
+                    <Link to="/businesses"><span className='m-4 hover:text-custom-green cursor-pointer'>All Businesses</span></Link>
                     <span className='m-4 hover:text-custom-green cursor-pointer'>About Us</span>
                     <span className='m-4 hover:text-custom-green cursor-pointer'>My Account</span>
                     
