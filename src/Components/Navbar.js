@@ -23,7 +23,7 @@ const Navbar = () => {
             <div id="navlogo" className="w-1/2 flex justify-start">
                 <Link to="/">
                     <h3 className="md:text-2xl text-lg font-bold text-custom-red hover:text-red-700">
-                    Us to You <FontAwesomeIcon icon={ faHandHoldingHeart } size="1x" />
+                    Us to You <FontAwesomeIcon icon={ faHandHoldingHeart } className="text-blue-400" size="1x" />
                     </h3>
                 </Link>
             </div>
@@ -38,13 +38,13 @@ const Navbar = () => {
                                 absolute z-20 w-350 h-screen bg-white
                                 flex flex-col -mt-6 pt-4 pl-4">
                      <Link to="/"><span className='m-2 text-xl hover:text-custom-red cursor-pointer'>Home</span></Link> 
-                    <span className='m-4  text-xl hover:text-custom-red cursor-pointer'>Businesses</span>
+                    <span className='m-4  text-xl hover:text-custom-red cursor-pointer'>All Businesses</span>
                     <span className='m-4  text-xl hover:text-custom-red cursor-pointer'>About Us</span>
                     <span className='m-4  text-xl hover:text-custom-red cursor-pointer'>My Account</span>
                     
                     <Link to="/login"><span className='m-4 text-xl hover:text-custom-red lg:py-2 lg:px-4 lg:shadow-md lg:text-white lg:bg-custom-red lg:rounded-md lg:hover:bg-red-700 lg:hover:text-white cursor-pointer'>Login</span></Link> 
                     <span className="m-4 text-xl hover:text-custom-red cursor-pointer">
-                        <span className="lg:hidden">Cart</span> <FontAwesomeIcon className="lg:m-2 ml-2 text-blue-400 hover:text-custom-red cursor-pointer" icon={faShoppingBag} size="lg" />
+                        <span className="lg:hidden">My Bag</span> <FontAwesomeIcon className="lg:m-2 ml-2 text-blue-400 hover:text-custom-red cursor-pointer" icon={faShoppingBag} size="lg" />
                     </span>
                     <span onClick={toggleActiveLink} className='m-4 lg:hidden text-xl hover:text-custom-red cursor-pointer'>
                         Close <FontAwesomeIcon className="hover:text-custom-red cursor-pointer" icon={faChevronRight} />
