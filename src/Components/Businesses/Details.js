@@ -26,7 +26,12 @@ const Details = () => {
                         </span>
                         11AM - 8PM
                     </p>
-                    <p className="text-xl px-2 bg-gray-800 font-bold">$0 Delivery Fee | 5-16 min</p>
+                    <p className="text-xl px-2 bg-gray-800 font-bold">
+                        $0 Delivery Fee  
+                    </p>
+                    <p className="text-lg mt-2 px-2 bg-gray-800">
+                        Arrives in 5-16 min
+                    </p>
             </div>
             <div className="w-5/6 min-w-0 mx-auto px-10 pt-10 mb-40">
                 <div className="w-full flex flex-col">

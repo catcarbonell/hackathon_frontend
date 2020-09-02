@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProductDetails = ({ toggleModal, activeModal }) => {
     return(
@@ -19,7 +20,9 @@ const ProductDetails = ({ toggleModal, activeModal }) => {
                     <p className="text-lg">Look at this cute af Batduck. Official DC merch. Super rare. Trust me.</p>
                 </div>
                 <div className="mt-6">
-                    <button className="w-full py-3 px-4 bg-custom-green hover:bg-green-700 rounded uppercase text-white font-bold">Add to Bag</button>
+                    <Link to="/shoppingCart">
+                        <button className="w-full py-3 px-4 bg-custom-green hover:bg-green-700 rounded uppercase text-white font-bold">Add to Bag</button>
+                    </Link>
                     <p onClick={ toggleModal } className="cursor-pointer text-center mt-4 uppercase hover:font-bold">Close</p>
                 </div>
             </div>

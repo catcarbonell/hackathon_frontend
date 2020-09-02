@@ -1,63 +1,39 @@
 import React from "react";
+import ItemDetails from './ItemDetails';
 
-const ShoppingCart = (props) => {
+const ShoppingCart = () => {
+  const items = [
+    { id: 1,
+      itemName: "Batduck",
+      image: "https://images.unsplash.com/photo-1559715541-5daf8a0296d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1184&q=80",
+      price: 20,
+      store: "Comic & Figure Addicts"
+    },
+  ]
+ 
+  // const [total, setTotal] = useState({});
+
   return (
-    <div>
-      <br></br>
-      <center>
-        <h1 className="text-3xl">Your Cart</h1>
-      </center>
-      <div>
-        <br></br>
-        <center>
-          <table className="table-auto shadow-xl rounded-lg text-lg ">
-            <tr className="bg-gray-100">
-              <th className="px-4 py-2">Number</th>
-              <th className="px-4 py-2">Photo</th>
-              <th className="px-4 py-2">Name</th>
-              <th className="px-4 py-2">Price</th>
-              <th className="px-4 py-2">Quantity</th>
-              <th className="px-4 py-2">Total</th>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">1</td>
-              <td className="border px-4 py-2">"myUrl.jpg"</td>
-              <td className="border px-4 py-2">Hamburger</td>
-              <td className="border px-4 py-2">$6.99</td>
-              <td className="border px-4 py-2">1</td>
-              <td className="border px-4 py-2">$6.99</td>
-            </tr>
-            <tr className="bg-gray-100">
-              <td className="border px-4 py-2">2</td>
-              <td className="border px-4 py-2">"myUrl.jpg"</td>
-              <td className="border px-4 py-2">Fries</td>
-              <td className="border px-4 py-2">$4.99</td>
-              <td className="border px-4 py-2">2</td>
-              <td className="border px-4 py-2">$9.98</td>
-            </tr>
-            <tr>
-              <td className="border px-4 py-2">3</td>
-              <td className="border px-4 py-2">"myUrl.jpg"</td>
-              <td className="border px-4 py-2">Coke</td>
-              <td className="border px-4 py-2">$1.99</td>
-              <td className="border px-4 py-2">1</td>
-              <td className="border px-4 py-2">$1.99</td>
-            </tr>
-          </table>
-        </center>
-        <br></br>
-        <br></br>
-        <br></br>
+    <div className="overflow-hidden w-full m-auto h-screen
+                    flex flex-col justify-center items-center content-center">
+      <h1 className="text-3xl font-bold uppercase tracking-widest">Yay stuff!</h1>
+      <div> 
+      {items.map(item => (
+            <ItemDetails 
+              key={item.id}
+              {...items}
+              image={item.image}
+              itemName={item.itemName}
+              price={item.price}
+              store={item.store}
+            />
+          )
+        )
+      }
       </div>
-      <center>
-        <div>
-          <span className="m-4 text-lg uppercase hover:text-custom-green lg:py-2 lg:px-6 lg:shadow-md lg:text-white lg:bg-custom-green lg:rounded-md lg:hover:bg-green-600 lg:hover:text-white cursor-pointer">
-            Checkout
-          </span>
-        </div>
-      </center>
-      <br></br>
-      <br></br>
+      <button className="w-48 rounded-lg shadow-lg py-4 bg-custom-green hover:bg-custom-limegreen uppercase font-bold text-white">
+        Checkout
+      </button>
     </div>
   );
 };
