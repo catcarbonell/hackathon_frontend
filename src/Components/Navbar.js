@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHamburger, faChevronRight, faShoppingBag, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faChevronRight, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import logo from '../Assets/ustoyou-logo.jpg'
 
 const Navbar = () => {
