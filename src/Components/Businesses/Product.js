@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Product = (props) => {
     return(
         
@@ -18,7 +18,9 @@ const Product = (props) => {
             </div>
 
             <div>
-                <button className="w-full py-3 px-4 bg-custom-green hover:bg-green-700 uppercase text-white font-bold">Add to Bag</button>
+                <Link to="/shoppingCart">
+                    <button className="w-full py-3 px-4 bg-custom-green hover:bg-green-700 uppercase text-white font-bold">Add to Bag</button>
+                </Link>
             </div>
         
         
