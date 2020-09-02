@@ -3,7 +3,7 @@ import React from 'react';
 const SignUp = (props) => {
     return (       
         <form className="md:w-350 w-full bg-white shadow-md rounded-lg px-8 pt-6 pb-8">
-            <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
+            <h2 className="uppercase text-2xl font-bold mb-4">Sign Up</h2>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" for="username">
                     Create your Username
@@ -32,7 +32,7 @@ const SignUp = (props) => {
             </div>
 
             <div className="flex flex-col items-center justify-between">
-                <button className="bg-custom-limegreen hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <button className="bg-custom-limegreen hover:bg-green-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                     Sign Up
                 </button>
             </div>
