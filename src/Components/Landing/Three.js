@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faMapMarkerAlt, faGift, faUtensils } from '@fortawesome/free-solid-svg-icons';
 
 const Three = () => {

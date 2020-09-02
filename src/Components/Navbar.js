@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHamburger, faChevronRight, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faChevronRight, faShoppingBag, faHandHoldingHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
     const [activeLink, setActiveLink] = useState(false);
@@ -22,8 +22,8 @@ const Navbar = () => {
            
             <div id="navlogo" className="w-1/2 flex justify-start">
                 <Link to="/">
-                    <h3 className="md:text-2xl text-lg font-bold text-custom-red">
-                        Us to You
+                    <h3 className="md:text-2xl text-lg font-bold text-custom-red hover:text-red-700">
+                    Us to You <FontAwesomeIcon icon={ faHandHoldingHeart } size="1x" />
                     </h3>
                 </Link>
             </div>
