@@ -14,6 +14,7 @@ const Product = (props) => {
                 </h3>
 
                 <p className="text-2xl"> ${ props.price }</p>
+                <p className="hover:text-custom-green">Click for details!</p>
             </div>
 
             <div>

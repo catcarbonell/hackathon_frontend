@@ -10,7 +10,7 @@ const ProductDetails = ({ toggleModal, activeModal }) => {
                     <img className="object-cover shadow-md rounded-t" src="https://images.unsplash.com/photo-1559715541-5daf8a0296d0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1184&q=80" alt="Na na na na na na na na BATDUCK" />
                 </div>
                 <div>
-                <h3 className="text-4xl font-bold hover:text-custom-green mt-4">
+                <h3 className="text-4xl font-bold mt-4">
                     Batduck
                 </h3>
                 <p className="text-2xl">$20</p>
