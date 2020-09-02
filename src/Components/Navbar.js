@@ -61,9 +61,11 @@ const Navbar = () => {
               Home
             </span>
           </Link>
-          <span className="m-4 hover:text-custom-green cursor-pointer">
+          <Link to="/businesses">
+            <span className="m-4 hover:text-custom-green cursor-pointer">
             All Businesses
-          </span>
+            </span>
+          </Link>
           <span className="m-4 hover:text-custom-green cursor-pointer">
             About Us
           </span>

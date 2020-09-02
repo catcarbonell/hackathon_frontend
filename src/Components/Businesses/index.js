@@ -23,6 +23,7 @@ const Businesses = () => {
                     </div>
                     <div className="w-1/2">
                         <img className="h-full object-cover object-right-top rounded-r" 
+                             alt="flowers"
                              src="https://images.unsplash.com/photo-1552034507-dc5d8099e659?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80" />
                     </div>
                     
