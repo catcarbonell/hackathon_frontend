@@ -1,16 +1,12 @@
 import React from 'react';
-import Section from './Section';
+import One from './One';
 
 const Landing = () => {
     return(
         <div>
-            <Section />
-            <Section />
-            <Section />
-            <Section />
-            <Section />
-            <Section />
-            <Section />
+            <One />
+                
+
         </div>
     );
 }

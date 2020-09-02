@@ -619,9 +619,13 @@ video {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   background-color: #f0f0f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 #login-page {
@@ -645,10 +649,6 @@ body {
   margin: auto;
   position: absolute;
   z-index: -2;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Advent Pro', sans-serif;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {
