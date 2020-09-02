@@ -28,6 +28,9 @@ module.exports = {
         turqoise: '#5493b3',
         yellow: '#e4df6f',
         blue: '#91daff',
+        green: '#64BD87',
+        limegreen: '#95C801',
+        olivegreen: '#446552'
       },
 
       gray: {

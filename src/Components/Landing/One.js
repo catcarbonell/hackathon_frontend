@@ -5,7 +5,7 @@ const One = () => {
     return(
         <div className="overflow-hidden h-auto py-24 my-2 lg:flex-row flex flex-col justify-center content-center items-center m-auto bg-red-100">
             
-            <div className="lg:flex lg:flex-col lg:w-1/3 w-5/6 px-8 pt-10 pb-16 bg-custom-red rounded shadow-lg">
+            <div className="lg:flex lg:flex-col lg:w-1/3 w-5/6 px-8 pt-10 pb-16 bg-custom-green rounded shadow-lg">
                 <h2 className="lg:text-3xl text-xl pb-4 text-left font-bold uppercase border-b-4 border-t-0 border-r-0 border-l-0 border-solid border-4 border-gray-800 text-gray-100">Staying strong together</h2>
                 <p className="text-lg py-10 text-gray-100">
                     Small businesses are counting on all of us-- let's show

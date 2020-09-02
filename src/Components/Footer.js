@@ -9,7 +9,7 @@ const Footer = () =>{
                         <input className="w-48 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="text" placeholder="First Name" value="" />
                         <input className="w-48 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="text" placeholder="Last Name" value="" />
                         <input className="w-48 px-4 py-2 m-2 rounded border-2 border-solid border-gray-300" type="email" placeholder="Email" value="" />
-                        <button className="w-48 px-4 py-2 m-2 rounded shadow text-white uppercase bg-custom-red hover:bg-red-700">Subscribe</button>
+                        <button className="w-48 px-4 py-2 m-2 rounded shadow text-white uppercase bg-custom-green hover:bg-green-600">Subscribe</button>
                     </form>
                 </div>
                 <div id="sitemap" className="hidden lg:grid lg:grid-flow-col lg:grid-cols-4 lg:gap-20 lg:uppercase lg:text-md lg:text-left lg:my-10 lg:p-4">
