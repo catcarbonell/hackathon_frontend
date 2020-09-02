@@ -574,7 +574,7 @@ iframe,
 embed,
 object {
   display: block;
-  /* vertical-align: middle; */
+  vertical-align: middle;
 }
 
 /**
@@ -661,6 +661,29 @@ h1, h2, h3, h4, h5, h6 {
 #search::after {
   content: "";
   background:url('./Assets/img-06.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  z-index: -2;
+}
+
+#details-header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#details-header::after {
+  content: "";
+  background:url('https://images.unsplash.com/photo-1598888831741-cb535295b013?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
   background-size: cover;
   min-width: 100%;
   min-height: 100%;

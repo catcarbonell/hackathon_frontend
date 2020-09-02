@@ -5,6 +5,7 @@ import Footer from "./Components/Footer";
 import Landing from "./Components/Landing";
 import Login from "./Components/Login";
 import Businesses from "./Components/Businesses";
+import Details from "./Components/Businesses/Details";
 import ShoppingCart from "./Components/ShoppingCart";
 import "./tailwind.output.css";
 
@@ -18,6 +19,7 @@ function App() {
             <Route exact path="/" component={Landing} />
             <Route path="/login" component={Login} />
             <Route path="/businesses" component={Businesses} />
+            <Route path="/details" component={Details} />
             <Route path="/shoppingCart" component={ShoppingCart} />
           </Switch>
         </main>

@@ -39,7 +39,7 @@ const Businesses = () => {
                     <Listing 
                         thumbnail="https://images.unsplash.com/photo-1572451480598-fb65b95a6ea0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
                         altTxt="A pile of tasty croissants"
-                        businessName="Crumble and Flake Patisserie"
+                        businessName="Crumble &amp; Flake Patisserie"
                         time="5-16"
                         fee="0"
                         rating={4}
@@ -63,15 +63,17 @@ const Businesses = () => {
                         rating={4}
                         totalRating={321}
                     />
-                    <Listing 
-                        thumbnail="https://images.unsplash.com/photo-1568926728897-5e20b503dc20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80"
-                        altTxt="Some tasty macarons"
-                        businessName="Mac'd with Love"
+                   
+                        <Listing 
+                        thumbnail="https://images.unsplash.com/photo-1598888831741-cb535295b013?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+                        altTxt="A pile of old comic books"
+                        businessName="Comic &amp; Figure Addicts"
                         time="5-16"
                         fee="0"
                         rating={5}
                         totalRating={777}
-                    />
+                        />
+
                 </div>
             </div>
 

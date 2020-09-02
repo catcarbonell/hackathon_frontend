@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
@@ -10,8 +11,13 @@ const Listing = (props) => {
             <div> 
                 <img className="object-cover shadow-md rounded-t" src={ props.thumbnail } alt={props.altTxt} />
             </div>
-            <div className="m-2 px-4 pb-2">
-                <h3 className="text-xl font-bold hover:text-custom-green">{ props.businessName }</h3>
+            <div className="m-auto p-6">
+                <Link to="/details">
+                    <h3 className="text-xl font-bold hover:text-custom-green">
+                        { props.businessName }
+                    </h3>
+                </Link>
+
                 <p className="text-sm"> ${ props.fee } Delivery fee | { props.time } min</p>
                 <p>
                     Avg rating:
