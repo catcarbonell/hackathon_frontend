@@ -75,7 +75,7 @@ const Navbar = () => {
 
           <Link to="/login">
             <span className="m-4 text-lg uppercase hover:text-custom-green lg:py-2 lg:px-6 lg:shadow-md lg:text-white lg:bg-custom-green lg:rounded-md lg:hover:bg-green-600 lg:hover:text-white cursor-pointer">
-              Login
+              Log Out
             </span>
           </Link>
           <span className="m-4 hover:text-custom-green cursor-pointer">
