@@ -59,7 +59,7 @@ const Checkout = () => {
                         </div>
                     </form>
                     <div className="mt-6">
-                        <Link to="/shoppingCart">
+                        <Link to="/completed">
                             <button className="w-full py-3 px-4 bg-custom-green hover:bg-green-700 rounded uppercase text-white font-bold">
                                 Complete Checkout
                             </button>
