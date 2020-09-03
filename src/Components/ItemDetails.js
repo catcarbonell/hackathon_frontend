@@ -5,12 +5,13 @@ const ItemDetails = ({ itemName, price, image, store }) =>{
     const handleQtyChange = (event) => {
         setQty(event.target.value);
     }
-    const handleTotalPrice = () =>{
+    const handleTotalPrice= () =>{
         return qty * price
-      }
+    }
+    
     return (
     <div className="bg-white box-content flex lg:flex-row sm:flex-col sm:my-8 items-center  shadow-md p-6 my-6 rounded-lg" id="item-container">
-        <img className="h-24 w-24 sm:h-32 sm:w-32 rounded-full shadow-md" src={image} alt="A cactus in a teacup" />
+        <img className="lg:h-24 lg:w-24 h-32 w-32 rounded-full shadow-md" src={image} alt="A cactus in a teacup" />
         <div className="w-64 px-4">
             <h2 className="font-bold text-xl">{itemName}</h2>
             <p className="uppercase">{store}</p>
@@ -23,7 +24,8 @@ const ItemDetails = ({ itemName, price, image, store }) =>{
         </div>
     
         <div className="totalContainer p-8 lg:ml-32 flex flex-end items-end justify-end">
-            <p>$<span>{handleTotalPrice()}</span></p>
+            <p>$<span id="grandTotal">{handleTotalPrice()}</span>
+            </p>
         </div>
     </div>
     )
