@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer";
 import Landing from "./Components/Landing";
 import Login from "./Components/Login";
@@ -13,7 +13,7 @@ import "./tailwind.output.css";
 
 function App() {
   return (
-    <div className="App min-h-screen">
+    <div className="App min-h-screen overflow-hidden">
       <div className="flex flex-col">
         <Navbar />
         <main className="flex-1">
