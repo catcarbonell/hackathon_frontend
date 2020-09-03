@@ -2,9 +2,8 @@ import React from 'react';
 
 const Navlinks = (props) => {
     return(
-        <div className="cursor-pointer py-2
-                        lg:w-32 w-full
-                        lg:text-center hover:text-custom-green">
+        <div className="cursor-pointer mr-8 sm:py-2
+                        hover:text-custom-green">
             {props.pageName}
         </div>
     );
