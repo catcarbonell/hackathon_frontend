@@ -7,6 +7,7 @@ import Login from "./Components/Login";
 import Businesses from "./Components/Businesses";
 import Details from "./Components/Businesses/Details";
 import ShoppingCart from "./Components/ShoppingCart";
+import Checkout from "./Components/Checkout";
 import "./tailwind.output.css";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/login" component={Login} />
             <Route path="/businesses" component={Businesses} />
             <Route path="/details" component={Details} />
+            <Route path="/checkout" component={Checkout} />
             <Route path="/shoppingCart" component={ShoppingCart} />
           </Switch>
         </main>

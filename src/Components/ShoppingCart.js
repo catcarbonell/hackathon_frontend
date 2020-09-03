@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ItemDetails from './ItemDetails';
 
 const ShoppingCart = () => {
@@ -29,15 +30,12 @@ const ShoppingCart = () => {
           )
         }
       </div>
-      {/* <div>
-        <h2 className="text-3xl font-bold uppercase mb-8">
-          Total: $
-        </h2>
-      </div> */}
-
-      <button className="w-48 rounded-lg shadow-lg py-4 bg-custom-green hover:bg-custom-limegreen uppercase font-bold text-white">
-        Checkout
-      </button>
+      
+      <Link to="/checkout">
+        <button className="w-48 rounded-lg shadow-lg py-4 bg-custom-green hover:bg-custom-limegreen uppercase font-bold text-white">
+          Checkout
+        </button>
+      </Link> 
     </div>
   );
 };
