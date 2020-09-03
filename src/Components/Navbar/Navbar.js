@@ -38,7 +38,7 @@ const Navbar = () => {
           onClick={toggleActiveLink}
           className="mr-4 text-custom-limegreen hover:text-custom-green cursor-pointer"
           icon={faHamburger}
-          size="2x"/>
+          size="3x"/>
       </div>
 
       <div id="navlinks"
@@ -74,8 +74,8 @@ const Navbar = () => {
           </Link>
 
           <span onClick={toggleActiveLink}
-            className="m-4 lg:hidden text-xl hover:text-custom-green cursor-pointer">
-            Close
+            className="mt-4 pb-8 lg:hidden text-xl hover:text-custom-green cursor-pointer">
+            Close &nbsp;
             <FontAwesomeIcon
               className="hover:text-custom-green cursor-pointer"
               icon={faChevronRight}/>
