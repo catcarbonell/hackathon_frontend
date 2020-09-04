@@ -11,7 +11,7 @@ import "./tailwind.output.css";
 function App() {
   return (
     <div className="App min-h-screen overflow-hidden">
-      <div className="flex flex-col">
+      <div className="box-border flex flex-col">
         <Navbar />
         <main className="flex-1">
           <Switch>
