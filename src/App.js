@@ -13,7 +13,7 @@ function App() {
     <div className="App min-h-screen overflow-hidden">
       <div className="box-border flex flex-col">
         <Navbar />
-        <main className="flex-1">
+        <main className="box-border flex-1">
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route path="/login" component={Login} />

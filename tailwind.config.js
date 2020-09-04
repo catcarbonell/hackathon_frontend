@@ -8,7 +8,7 @@ module.exports = {
   ],
   target: 'relaxed',
   prefix: '',
-  important: false,
+  important: true,
   separator: ':',
   theme: {
     screens: {
@@ -228,7 +228,14 @@ module.exports = {
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
     },
-    container: {},
+    container: {
+      center: true,
+      xs: '360px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px'
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
@@ -306,6 +313,11 @@ module.exports = {
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
+      xs: '360px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     }),
     inset: {
       '0': '0',
@@ -456,6 +468,11 @@ module.exports = {
       '11/12': '91.666667%',
       full: '100%',
       screen: '100vw',
+      xs: '360px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px'
     }),
     zIndex: {
       auto: 'auto',
