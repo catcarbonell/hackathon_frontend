@@ -13,27 +13,27 @@ const Businesses = () => {
                     className="lg:h-xs shadow-xl bg-green-100 mb-20 flex flex-col lg:flex-row">
 
                 <div className="container-sm">
-                        <img className="lg:h-xs object-right object-cover" src={cafe} alt="man pouring creamer into a cup of coffee" />
+                    <img className="lg:h-xs object-right object-cover" src={cafe} alt="man pouring creamer into a cup of coffee" />
                 </div>
 
                 <div id="businesses-second-col"
-                     className="bg-gray-800 text-gray-100 h-full flex flex-col justify-center content-center m-auto px-8 pt-8">                        
-                        <h2 className="text-2xl font-bold">Support Black-owned Shops!</h2>
-                        <p className="text-lg md:w-5/6 my-4">Order from your friendly neighborhood Black-owned shop-- with FREE delivery through 2020!</p>
-                        <GreenButton text="Shop now!" />
+                     className="bg-gray-800 text-gray-100 w-full h-full flex flex-col justify-center content-center m-auto px-8 pt-8">                        
+                    <h2 className="text-2xl font-bold">Support Black-owned Shops!</h2>
+                    <p className="text-lg md:w-5/6 my-4">Order from your friendly neighborhood Black-owned shop-- with FREE delivery through 2020!</p>
+                    <GreenButton text="Shop now!" />
                 </div>
 
                 <div id="businesses-third-col"
                      className="text-gray-800 bg-red-300 text-white flex flex-col justify-center content-center h-auto pt-8 px-8">
                     <div id="third-col-text">
-                            <h2 className="text-2xl font-bold">FREE Delivery</h2>
-                            <p className="text-lg">Make gifting quick and easy-peasy!</p>
-                            <DarkButton text="Shop now!" />
+                        <h2 className="text-2xl font-bold">New Shops!</h2>
+                        <p className="text-lg">Give these newly listed shops a warm welcome!</p>
+                        <DarkButton text="Discover!" />
                     </div>
                 </div>
                 <div className="container-sm">
-                        <img className="lg:h-xs object-right object-cover" src={flowerDelivery} alt="two women delivering flowers" />
-                    </div>
+                    <img className="lg:h-xs object-right object-cover" src={flowerDelivery} alt="two women delivering flowers" />
+                </div>
            </section>
 
            <div className="flex flex-col">     

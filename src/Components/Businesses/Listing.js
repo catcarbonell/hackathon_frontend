@@ -11,7 +11,7 @@ const Listing = (props) => {
             <div> 
                 <img className="object-cover shadow-md rounded-t" src={ props.thumbnail } alt={props.altTxt} />
             </div>
-            <div className="m-auto p-6">
+            <div className="m-auto flex flex-col justify-center content-center m-auto py-4 px-4">
                 <Link to="/details">
                     <h3 className="text-xl font-bold hover:text-custom-green">
                         { props.businessName }
